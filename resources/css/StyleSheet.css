@@ -1,0 +1,383 @@
+﻿/*Generalized Styles*/
+body {
+    margin-top: 20px;
+    background-image: url(../../Images/extra_clean_paper.png);
+    background-repeat: repeat;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+hr {
+    margin: 20px 0 20px 0;
+}
+
+a {
+    font-weight: bold;
+    color: #254651;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: #336271;
+    }
+
+p {
+    background-color: rgba(122, 122, 122, 0.22);
+    padding: 10px;
+    border: 2px solid #dddddd;
+}
+
+ul, li {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Duru+Sans',sans-serif;
+    font-weight: bold;
+}
+
+/*Special Styles*/
+
+.success {
+    color: #336271;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.failure{
+    color:red;
+}
+
+/*Start Bootstrap Overriden Styles*/
+.container {
+    padding: 0;
+}
+
+.list-group-item {
+    background-color: rgba(122, 122, 122, 0.22);
+}
+
+.navbar {
+    margin: 0;
+    background-color: #254651;
+    border-color: #254651;
+    height: 40px;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #213D46;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #182c33;
+}
+
+
+.btn {
+    background-color: #336271;
+    border-color: #336271;
+}
+
+
+    .btn:hover {
+        background-color: #254651;
+        border-color: #254651;
+    }
+
+.list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    background-color: lightgrey;
+}
+
+.panel-default > .panel-heading {
+    background-color: rgba(122, 122, 122, 0.22);
+}
+
+.modal-dialog {
+    width: 780px;
+}
+
+label {
+    display: normal;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+#mainContent_CreateUserWizard1 * {
+    text-align: left;
+}
+/*Header Styles*/
+header {
+    position: relative;
+    border-top: 10px solid lightgrey;
+    border-top-right-radius: 25px;
+    height: 250px;
+    overflow: hidden;
+}
+
+    header > div#search-box {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        z-index: 1000;
+    }
+
+    header > div > div {
+        display: inline-block;
+    }
+
+/*Navigation Styles*/
+#navigation {
+    background-color: #336271;
+    margin-bottom: 20px;
+}
+
+/*Sidebar Styles*/
+.sidebar {
+    background-color: rgba(122, 122, 122, 0.22);
+    margin-bottom: 20px;
+    border-width: 5px;
+    padding: 10%;
+}
+
+    .sidebar h2 {
+        margin-top: 0px;
+        background-color: lightgrey;
+        padding: 5%;
+    }
+
+    .sidebar img {
+        border: 3px solid rgba(122, 122, 122, 0.22);
+    }
+
+/*Section Styles*/
+.section {
+    background-color: rgba(122, 122, 122, 0.22);
+    margin-bottom: 20px;
+    padding: 15px 25px 25px 25px;
+}
+
+    .section img, i {
+        border: 3px solid rgba(122, 122, 122, 0.22);
+    }
+
+/*SinglePost Page Specific Styles*/
+.singlepost-favorite-button-area {
+    text-align: right;
+    display: block;
+}
+
+/*SingleImage Page Specific Styles*/
+.singleimage-rating-area {
+    text-align: center;
+    padding: 0 20% 0 20%;
+    /*Note* Defining padding with no width indicates 
+        how much is padding and how much is content*/
+}
+
+    .singleimage-rating-area > h3 {
+        font-size: 24px;
+    }
+
+    .singleimage-rating-area > p {
+        font-size: 24px;
+    }
+
+    .singleimage-rating-area > input {
+        margin-top: 20px;
+    }
+
+.singleimage-add-review-area > input[type='submit'] {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.rate-area {
+    float: left;
+}
+
+    .rate-area input {
+
+        width: 10%;
+    }
+
+    .rate-area label,.rate-area input{
+        display:inline-block;
+    }
+
+    .rate-area * {
+    }
+       
+    
+
+
+.singleimage-add-review-area textarea{
+    width: 100%;
+}
+
+/*SingleUser Page Specific Styles*/
+.singleuser-image-area > i {
+    font-size: 300px;
+    /*Increase icon size as user image*/
+}
+
+.singleuser-data-area {
+    text-align: center;
+}
+
+    .singleuser-data-area > ul {
+        padding: 5%;
+        list-style: none;
+        text-align: left;
+    }
+
+        .singleuser-data-area > ul > li {
+            margin: 3% 3%;
+            background-color: rgba(122, 122, 122, 0.22);
+            padding: 3%;
+        }
+/*SingleCountry Page Specific Styles*/
+.singlecountry-flag-area > img {
+    margin-right: 10px;
+    border: none;
+}
+
+.singlecountry-flag-area > img,
+.singlecountry-flag-area > h2 {
+    display: inline-block;
+}
+
+/*Browse Page Styles*/
+#mainContent_lbHeading {
+    font-size: 30px;
+    font-family: 'Duru+Sans',sans-serif;
+    font-weight: bold;
+}
+
+
+/*Data Table/Update Table General Styles*/
+.data-table td {
+    text-align: center;
+    border: 1px solid lightgrey;
+    background-color: #dddddd;
+}
+
+.input-table td {
+    border: 1px solid lightgrey;
+    text-align: right;
+    background-color: rgba(122, 122, 122, 0.22);
+}
+
+
+.data-table table {
+    background-color: rgba(122, 122, 122, 0.22);
+}
+
+.data-table th, .input-table th {
+    font-weight: bold;
+}
+
+/*Data Table Specific Styles*/
+.data-table th, tr, td {
+    padding: 15px;
+}
+
+    /*Update Table Specific Styles*/
+
+
+    .input-table td:nth-child(2), td:nth-child(3) {
+        background: none;
+    }
+
+.input-table td span {
+    border: none;
+}
+
+.input-table th, tr, td {
+    padding: 7.5px;
+}
+
+/*User Control Grid Specific Style*/
+.grid-table td .title {
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+    display: block;
+}
+
+.grid-table td > img {
+    border: 2.5px solid darkgrey;
+}
+
+.grid-table td:nth-child(2) .title {
+    background-color: rgba(122, 122, 122, 0.22);
+    border: 1px solid #dddddd;
+}
+
+.grid-table a, span {
+    font-size: 16px;
+}
+
+/*User Control Image Box Specific Style*/
+.image-box {
+    display: block;
+    text-align: center;
+    margin-right: 35px;
+    margin-bottom: 20px;
+    float: left;
+    font-weight: bold;
+}
+
+    .image-box a {
+        display: inline-block;
+    }
+
+        .image-box a > img {
+            border: 5px solid darkgrey;
+        }
+
+    .image-box > p {
+        padding: 5px 2px 5px 2px;
+        font-size: 9.3px;
+        font-weight: 600;
+    }
+
+/*Footer Styles*/
+#footer {
+    margin-top: 20px;
+    border-top: 10px solid lightgrey;
+    background-color: #336271;
+}
+
+    #footer #footer-inner {
+        background-color: #254651;
+        text-align: center;
+        border-left: 1px solid #254651;
+        border-right: 1px solid #254651;
+        padding: 50px;
+        height: 150px;
+    }
+
+
+#footer-inner > span {
+    color: #dddddd;
+}

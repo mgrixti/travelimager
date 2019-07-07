@@ -1,0 +1,239 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%--Masterpage Markup--%>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <title>COMP 3512 - Assign #3</title>
+    <link type="text/css" rel="stylesheet" href="~/resources/css/Reset.css">
+    <link type="text/css" rel="stylesheet" href="~/resources/css/bootstrap-3.0.0/dist/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="~/resources/css/StyleSheet.css" runat="server" />
+    <link href='http://fonts.googleapis.com/css?family=Duru+Sans%7CUbuntu' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./bootstrap-3.0.0/dist/js/bootstrap.js"></script>
+    <script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <%--Masterpage Specific Data--%>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <%--Header--%>
+                    <header>
+
+                        <%--Search Form--%>
+                        <div id="search-box">
+                            <div class="form-group">
+                                <asp:TextBox ID="tbSearch" runat="server" CssClass="form-control"
+                                    Placeholder="Search Images" />
+                            </div>
+                            <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-primary"
+                                Text="Search" OnClick="btnSearch_Click"></asp:Button>
+                        </div>
+
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <%-- Carousel Indicators --%>
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+
+                            <%-- Carousel Wrapper For slides --%>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="img-responsive" src="~/Carousel/Carousel1.jpg" runat="server" alt="carouselimage" />
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="~/Carousel/Carousel2.jpg" runat="server" alt="carouselimage" />
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="~/Carousel/Carousel3.jpg" runat="server" alt="carouselimage" />
+                                </div>
+                            </div>
+
+                            <%--Carousel Controls --%>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        <%--Navigation Area--%>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="navigation">
+                        <div class="container">
+
+                            <%--Navigation Menu--%>
+                            <nav class="navbar navbar-inverse" role="navigation">
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="~/Default.aspx" runat="server">Home</a></li>
+                                        <li><a href="~/About.aspx" runat="server">About Us</a></li>
+                                        <li><a href="~/Search.aspx" runat="server">Advanced Search</a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse<b class="caret"></b></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="~/Browse.aspx?type=images" runat="server">Travel Images</a></li>
+                                                <li><a href="~/Browse.aspx?type=posts" runat="server">Posts</a></li>
+                                                <li><a href="~/Browse.aspx?type=users" runat="server">Users</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="navbar-right">
+                                        <span class="navbar-text">
+                                            <asp:LoginName ID="LoginName" runat="server"
+                                                FormatString="Welcome <strong>{0}</strong>! " CssClass="nav navbar-nav" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%--Sidebar Area--%>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <%--User Menu--%>
+                    <div class="sidebar">
+
+                        <h2>User Menu</h2>
+                        <asp:LoginView ID="UserMenuLoginView" runat="server">
+                            <AnonymousTemplate>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                                    </li>
+                                    <li class="list-group-item"><a href="./Register.aspx" title="Register">Register</a></li>
+                                    <li class="list-group-item"><a href="./Favorites.aspx" title="View Favorites">View Favorites List</a></li>
+                                </ul>
+                            </AnonymousTemplate>
+                            <RoleGroups>
+                                <asp:RoleGroup Roles="visitor">
+                                    <ContentTemplate>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutPageUrl="~/Login.aspx" />
+                                            </li>
+                                            <li class="list-group-item"><a href="./Account.aspx" title="My Account">My Account</a></li>
+                                            <li class="list-group-item"><a href="./Favorites.aspx" title="View Favorites">View Favorites List</a></li>
+                                        </ul>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                                <asp:RoleGroup Roles="administrator">
+                                    <ContentTemplate>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutPageUrl="~/Login.aspx" />
+                                            </li>
+                                            <li class="list-group-item"><a href="~/Account.aspx" title="My Account" runat="server">My Account</a></li>
+                                            <li class="list-group-item"><a href="~/Favorites.aspx" title="View Favorites" runat="server">View Favorites List</a></li>
+                                            <li class="list-group-item"><a href="./AdminOnly/EditUsers.aspx" title="Edit Users">Edit Users</a></li>
+                                        </ul>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                            </RoleGroups>
+                            <LoggedInTemplate>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                    </div>
+
+                    <div class="sidebar" style="padding: 0">
+                        <a href="http://www.westjet.com" target="_blank">
+                            <img id="Img1" src="~/Images/vertical-image.jpg" runat="server" alt="Travel" title="Travel" />
+                        </a>
+                    </div>
+
+                    <%--Access Menu--%>
+                    <div class="sidebar">
+                        <h2>Access Menu</h2>
+                        <h5>Provides access to data.</h5>
+
+                        <%--Ajax Panel--%>
+                        <asp:UpdatePanel ID="upAjax" runat="server">
+                            <ContentTemplate>
+
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <asp:RadioButton ID="rbCity" runat="server" Text="&nbsp;City" Checked="true"
+                                            GroupName="rbAccess" OnCheckedChanged="rbAccess_CheckedChanged" AutoPostBack="true" />
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <asp:RadioButton ID="rbCountry" runat="server" Text="&nbsp;Country"
+                                            GroupName="rbAccess" OnCheckedChanged="rbAccess_CheckedChanged" AutoPostBack="true" />
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <asp:RadioButton ID="rbContinent" runat="server" Text="&nbsp;Continent"
+                                            GroupName="rbAccess" OnCheckedChanged="rbAccess_CheckedChanged" AutoPostBack="true" />
+                                    </li>
+                                </ul>
+                                <div class="input-group">
+
+                                    <asp:Label ID="lbAccessMenu" runat="server" Text="Select a city:"></asp:Label>
+                                    <asp:DropDownList ID="ddlAccessMenu" runat="server" CssClass="form-control" />
+                                    <br />
+                                    <br />
+                                    <asp:Button ID="btnAccessMenu" CssClass="btn btn-primary"
+                                        runat="server" Text="Show" OnClick="btnAccessMenu_Click" />
+                                </div>
+
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <%--Content Area--%>
+                    <div class="section" style="padding: 0">
+                        <a href="http://www.basantaadventure.com/" target="_blank">
+                            <img src="~/Images/horizontal-image.jpg" alt="Travel" title="Travel" runat="server" />
+                        </a>
+                    </div>
+                    <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+        <%--Footer Area--%>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="footer-inner">
+                                        <span class="footer-inner-text">Copyright &copy; TravelImager Inc. 2014. All rights reserved.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

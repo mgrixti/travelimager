@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Content.Business.AbstractBusiness">
+    <Position X="11" Y="7.5" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQCAMAAAAAAAACBAElABAAAAgEBAAAABEABQAUAAAA=</HashCode>
+      <FileName>App_Code\Business\AbstractBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.AbstractBusinessCollection&lt;T&gt;">
+    <Position X="7" Y="19.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAACAAACBAAAAAAAAAAABAQAAAEAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Business\AbstractBusinessCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.BusinessRuleManager" Collapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAQAAAAgABAIAA=</HashCode>
+      <FileName>App_Code\Business\BusinessRuleManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.GeoCity">
+    <Position X="5" Y="12.25" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQQAhEAAAECAAAAIAIGIAAAEAkMAAAQAAAAAAAACEBQ=</HashCode>
+      <FileName>App_Code\Business\GeoCity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.GeoCityCollection">
+    <Position X="3.75" Y="23.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgQAAAAAAAAAAAAAAAIAAAAABAEgAAgAAAAAAABA=</HashCode>
+      <FileName>App_Code\Business\GeoCityCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.GeoCountry">
+    <Position X="9" Y="12.25" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAQCBUAAAAAAAAAMAQGAAAAEAgECAAgAQAACAQQCABE=</HashCode>
+      <FileName>App_Code\Business\GeoCountry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.GeoCountryCollection">
+    <Position X="10.25" Y="23.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgQAAAAAAAAAAAAAAAIAAAAABAEgAAgAAAAAAABA=</HashCode>
+      <FileName>App_Code\Business\GeoCountryCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.ListItem" Collapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAIAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Business\ListItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.SingleRule" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAgAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Business\SingleRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.TravelImage">
+    <Position X="17" Y="12.25" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ICQBgEAAAMQiAMIMAMEIAAQAAgMAAIEAAAAAAAACEJQ=</HashCode>
+      <FileName>App_Code\Business\TravelImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.TravelImageCollection">
+    <Position X="7" Y="23.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgQAAAAAgAAgAAAAAAIACAAABEEgAAgAAAAAAABA=</HashCode>
+      <FileName>App_Code\Business\TravelImageCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.TravelImageRating">
+    <Position X="13" Y="12.25" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACQAgEAAAAAAAIAAAAEAAAQAAgEAAAAAAACAAAQAABA=</HashCode>
+      <FileName>App_Code\Business\TravelImageRating.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.TravelPost">
+    <Position X="21" Y="12.25" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQBgEAAAIAAAMAAAAGAAAAEAgEAAIAAEAAAIAACCBA=</HashCode>
+      <FileName>App_Code\Business\TravelPost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.TravelPostCollection">
+    <Position X="13.5" Y="23.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgQAAgAAAAAAAAAAAAIACBAABAEgAAgAAAAAAABA=</HashCode>
+      <FileName>App_Code\Business\TravelPostCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.TravelUser">
+    <Position X="1" Y="12.25" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAUEgEACgCQAAIAIAMGAAAAEQgMAAQACAQIAIEADABk=</HashCode>
+      <FileName>App_Code\Business\TravelUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.Business.TravelUserCollection">
+    <Position X="0.5" Y="23.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgQAAAAAAAAAAAAAAAIAAAAABAEgAAgAAAAAAABA=</HashCode>
+      <FileName>App_Code\Business\TravelUserCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.AbstractDA">
+    <Position X="9" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAgAAAAAAAOg=</HashCode>
+      <FileName>App_Code\DataAccess\AbstractDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.DataAccessExceptionHandler" Collapsed="true">
+    <Position X="27" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>App_Code\DataAccess\DataAccessExceptionHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.DataHelper" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAgAJAAAAAAAAECAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DataAccess\DataHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.GeoCityDA">
+    <Position X="14.25" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAggAAAAAAACg=</HashCode>
+      <FileName>App_Code\DataAccess\GeoCityDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.GeoContinentDA">
+    <Position X="6" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAACg=</HashCode>
+      <FileName>App_Code\DataAccess\GeoContinentDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.GeoCountryDA">
+    <Position X="3" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAggAAAAAAAKg=</HashCode>
+      <FileName>App_Code\DataAccess\GeoCountryDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.TravelImageDA" Collapsed="true">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAAAAAAAAAAAAACAAAAAAAAAABAAAQAgAQAAAAACg=</HashCode>
+      <FileName>App_Code\DataAccess\TravelImageDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.TravelImageRatingDA">
+    <Position X="8.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAKg=</HashCode>
+      <FileName>App_Code\DataAccess\TravelImageRatingDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.TravelPostDA">
+    <Position X="11.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AICAAAAAAAAAAAAACAAAAAAAAAAAAAAAAgAYAAAAACg=</HashCode>
+      <FileName>App_Code\DataAccess\TravelPostDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.TravelUserDA">
+    <Position X="17.25" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAACg=</HashCode>
+      <FileName>App_Code\DataAccess\TravelUserDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

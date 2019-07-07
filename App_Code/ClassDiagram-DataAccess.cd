@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Content.DataAccess.DataHelper">
+    <Position X="6.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAgAJAAAAAAAAECAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DataAccess\DataHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.AbstractDA">
+    <Position X="3.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAgAAAAAAAOg=</HashCode>
+      <FileName>App_Code\DataAccess\AbstractDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.ArtistDA" Collapsed="true">
+    <Position X="2.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAACAAAAAAAAAAAAAAAIAAAQAAAAAAAgAAAAAAACg=</HashCode>
+      <FileName>App_Code\DataAccess\ArtistDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Content.DataAccess.ArtWorkDA" Collapsed="true">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAABAAAAAAAAAAAAAAAAgAQAAAAACg=</HashCode>
+      <FileName>App_Code\DataAccess\ArtWorkDA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
